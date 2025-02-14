@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情人节快乐</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffcccb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .message {
+            text-align: center;
+            background-color: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #e75480;
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <h1>情人节快乐！</h1>
+        <p>祝 <span id="name">XXX</span> 情人节快乐！</p>
+    </div>
+
+    <script>
+        // 你可以在这里动态修改名字
+        const name = "老表"; // 将XXX替换为你想要的名字
+        document.getElementById("name").textContent = name;
+    </script>
+</body>
+</html>
